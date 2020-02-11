@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{7f2e191d-4fa2-45c0-bf06-a2a09d1935f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{eef0c0e7-eef4-4795-aff0-101ecbdb18c9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\mimalloc.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\mimalloc-atomic.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\mimalloc-internal.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\mimalloc-new-delete.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\mimalloc-override.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\mimalloc-types.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\alloc.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\alloc-aligned.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\alloc-override.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\alloc-override-osx.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\alloc-posix.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arena.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\bitmap.inc.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\heap.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\init.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\options.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\os.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\page.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\page-queue.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\random.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\region.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\segment.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\static.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\stats.c">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
