@@ -368,7 +368,7 @@ mi_decl_nodiscard mi_decl_export void* mi_new_reallocn(void* p, size_t newcount,
 // Implement the C++ std::allocator interface for use in STL containers.
 // (note: see `mimalloc-new-delete.h` for overriding the new/delete operators globally)
 // ---------------------------------------------------------------------------------------------
-#if 0
+#if 0 // TODO(kasicass): we don't need mi_stl_allocator yet.
 #ifdef __cplusplus
 
 #include <cstdint>     // PTRDIFF_MAX
