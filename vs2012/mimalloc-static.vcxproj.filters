@@ -35,33 +35,6 @@
     <ClCompile Include="..\src\bitmap.inc.c">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\options.c">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\os.c">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\page.c">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\page-queue.c">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\random.c">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\region.c">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\segment.c">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\static.c">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\stats.c">
-      <Filter>src</Filter>
-    </ClCompile>
     <ClCompile Include="..\src\init.cpp">
       <Filter>src</Filter>
     </ClCompile>
@@ -78,6 +51,30 @@
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="..\src\alloc-aligned.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\options.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\os.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\page-queue.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\page.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\random.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\region.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\segment.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\stats.cpp">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>

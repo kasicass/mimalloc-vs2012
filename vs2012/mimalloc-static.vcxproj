@@ -33,15 +33,17 @@
     </ClCompile>
     <ClCompile Include="..\src\heap.cpp" />
     <ClCompile Include="..\src\init.cpp" />
-    <ClCompile Include="..\src\options.c" />
-    <ClCompile Include="..\src\os.c" />
-    <ClCompile Include="..\src\page-queue.c" />
-    <ClCompile Include="..\src\page.c" />
-    <ClCompile Include="..\src\random.c" />
-    <ClCompile Include="..\src\region.c" />
-    <ClCompile Include="..\src\segment.c" />
-    <ClCompile Include="..\src\static.c" />
-    <ClCompile Include="..\src\stats.c" />
+    <ClCompile Include="..\src\options.cpp" />
+    <ClCompile Include="..\src\os.cpp" />
+    <ClCompile Include="..\src\page-queue.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\src\page.cpp" />
+    <ClCompile Include="..\src\random.cpp" />
+    <ClCompile Include="..\src\region.cpp" />
+    <ClCompile Include="..\src\segment.cpp" />
+    <ClCompile Include="..\src\stats.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{F7DE239C-27DB-4BD0-8496-C13B70B27ECF}</ProjectGuid>

@@ -135,7 +135,7 @@ static void mi_printf_amount(int64_t n, int64_t unit, mi_output_fun* out, void* 
 
   const int64_t pos = (n < 0 ? -n : n);
   if (pos < base) {
-    snprintf(buf, len, "%d %s ", (int)n, suffix);
+    _snprintf(buf, len, "%d %s ", (int)n, suffix);
   }
   else {
     int64_t divider = base;
@@ -145,7 +145,7 @@ static void mi_printf_amount(int64_t n, int64_t unit, mi_output_fun* out, void* 
     const int64_t tens = (n / (divider/10));
     const long whole = (long)(tens/10);
     const long frac1 = (long)(tens%10);
-    snprintf(buf, len, "%ld.%ld %s%s", whole, frac1, magnitude, suffix);
+    _snprintf(buf, len, "%ld.%ld %s%s", whole, frac1, magnitude, suffix);
   }
   _mi_fprintf(out, arg, (fmt==NULL ? "%11s" : fmt), buf);
 }
@@ -222,7 +222,7 @@ static void mi_stats_print_bins(mi_stat_count_t* all, const mi_stat_count_t* bin
     if (bins[i].allocated > 0) {
       found = true;
       int64_t unit = _mi_bin_size((uint8_t)i);
-      snprintf(buf, 64, "%s %3zu", fmt, i);
+      _snprintf(buf, 64, "%s %3zu", fmt, i);
       mi_stat_add(all, &bins[i], unit);
       mi_stat_print(&bins[i], buf, unit, out, arg);
     }
