@@ -29,22 +29,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\src\alloc.c">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\alloc-aligned.c">
-      <Filter>src</Filter>
-    </ClCompile>
     <ClCompile Include="..\src\alloc-override.c">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\alloc-override-osx.c">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\alloc-posix.c">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\arena.c">
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="..\src\bitmap.inc.c">
@@ -81,6 +66,18 @@
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="..\src\heap.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\arena.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\alloc.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\alloc-posix.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\alloc-aligned.cpp">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>

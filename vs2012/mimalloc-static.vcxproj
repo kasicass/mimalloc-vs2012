@@ -19,13 +19,18 @@
     <ClInclude Include="..\include\mimalloc.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\src\alloc-aligned.c" />
-    <ClCompile Include="..\src\alloc-override-osx.c" />
-    <ClCompile Include="..\src\alloc-override.c" />
-    <ClCompile Include="..\src\alloc-posix.c" />
-    <ClCompile Include="..\src\alloc.c" />
-    <ClCompile Include="..\src\arena.c" />
-    <ClCompile Include="..\src\bitmap.inc.c" />
+    <ClCompile Include="..\src\alloc-aligned.cpp" />
+    <ClCompile Include="..\src\alloc-override.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\src\alloc-posix.cpp" />
+    <ClCompile Include="..\src\alloc.cpp" />
+    <ClCompile Include="..\src\arena.cpp" />
+    <ClCompile Include="..\src\bitmap.inc.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="..\src\heap.cpp" />
     <ClCompile Include="..\src\init.cpp" />
     <ClCompile Include="..\src\options.c" />
