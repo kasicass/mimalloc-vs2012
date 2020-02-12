@@ -50,12 +50,6 @@
     <ClCompile Include="..\src\bitmap.inc.c">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\heap.c">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\init.c">
-      <Filter>src</Filter>
-    </ClCompile>
     <ClCompile Include="..\src\options.c">
       <Filter>src</Filter>
     </ClCompile>
@@ -81,6 +75,12 @@
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="..\src\stats.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\init.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\heap.cpp">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>

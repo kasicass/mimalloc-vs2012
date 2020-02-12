@@ -87,12 +87,8 @@ terms of the MIT license. A copy of the license can be found in the file
 #include <stddef.h>     // size_t
 // #include <stdbool.h>    // bool
 
-#define bool int
-#define true (1)
-#define false (0)
-
 #ifdef __cplusplus
-extern "C" {
+// extern "C" {
 #endif
 
 // ------------------------------------------------------
@@ -365,13 +361,14 @@ mi_decl_nodiscard mi_decl_export void* mi_new_realloc(void* p, size_t newsize) m
 mi_decl_nodiscard mi_decl_export void* mi_new_reallocn(void* p, size_t newcount, size_t size) mi_attr_malloc mi_attr_alloc_size2(2, 3);
 
 #ifdef __cplusplus
-}
+// }
 #endif
 
 // ---------------------------------------------------------------------------------------------
 // Implement the C++ std::allocator interface for use in STL containers.
 // (note: see `mimalloc-new-delete.h` for overriding the new/delete operators globally)
 // ---------------------------------------------------------------------------------------------
+#if 0
 #ifdef __cplusplus
 
 #include <cstdint>     // PTRDIFF_MAX
@@ -423,5 +420,6 @@ template<class T> struct mi_stl_allocator {
 template<class T1,class T2> bool operator==(const mi_stl_allocator<T1>& , const mi_stl_allocator<T2>& ) mi_attr_noexcept { return true; }
 template<class T1,class T2> bool operator!=(const mi_stl_allocator<T1>& , const mi_stl_allocator<T2>& ) mi_attr_noexcept { return false; }
 #endif // __cplusplus
+#endif
 
 #endif
